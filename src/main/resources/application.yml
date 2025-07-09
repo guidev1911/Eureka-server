@@ -9,3 +9,11 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+    server:
+      wait-time-in-ms-when-sync-empty: 0
+      enable-self-preservation: false
+      eviction-interval-timer-in-ms: 5000
+
+  instance:
+    hostname: localhost
+    lease-expiration-duration-in-seconds: 10
